@@ -5200,3 +5200,596 @@ MOBILE
         font-size: 23px;
     }
 }
+/* =========================================
+   INTEREST PAGE
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f3;
+    color: #111;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.interest-navbar {
+    width: 100%;
+    height: 95px;
+
+    padding: 0 4.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f5f5f3;
+
+    border-bottom: 1px solid #ddd;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+/* Logo */
+
+.interest-logo {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    letter-spacing: -3px;
+
+    line-height: 1;
+}
+
+.interest-logo span {
+    font-size: 34px;
+}
+
+
+/* Navigation */
+
+.interest-navbar nav {
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.interest-navbar nav a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+.interest-navbar nav a:hover {
+    opacity: 0.5;
+}
+
+.interest-navbar nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+/* =========================================
+   MAIN
+   ========================================= */
+
+.interest-main {
+    width: 100%;
+    min-height: calc(100vh - 95px);
+
+    padding: 0 4.5vw 60px;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.interest-hero {
+    min-height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 70px 0 80px;
+}
+
+
+.interest-label {
+    margin-bottom: 25px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+
+/* Giant title */
+
+.interest-hero h1 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(
+        110px,
+        20vw,
+        320px
+    );
+
+    font-weight: 400;
+
+    line-height: 0.78;
+
+    letter-spacing: -4px;
+
+    transform: scaleX(0.9);
+    transform-origin: left;
+
+    margin-left: -5px;
+
+    white-space: nowrap;
+}
+
+
+.interest-hero p {
+    max-width: 560px;
+
+    margin-top: 45px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #666;
+}
+
+
+/* =========================================
+   INTEREST LIST
+   ========================================= */
+
+.interest-list {
+    width: 100%;
+
+    border-top: 1px solid #222;
+}
+
+
+/* Individual item */
+
+.interest-item {
+    min-height: 180px;
+
+    display: grid;
+
+    grid-template-columns: 10% 1fr 60px;
+
+    align-items: center;
+
+    gap: 30px;
+
+    border-bottom: 1px solid #ccc;
+
+    transition:
+        background 0.3s ease,
+        padding 0.3s ease;
+}
+
+
+.interest-item:hover {
+    background: #111;
+
+    color: #fff;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Number */
+
+.interest-number {
+    align-self: start;
+
+    padding-top: 30px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #888;
+}
+
+.interest-item:hover .interest-number {
+    color: #aaa;
+}
+
+
+/* Content */
+
+.interest-info {
+    padding: 30px 0;
+}
+
+
+.interest-info h2 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: clamp(
+        55px,
+        7vw,
+        105px
+    );
+
+    font-weight: 400;
+
+    line-height: 0.9;
+
+    letter-spacing: -1px;
+}
+
+
+.interest-info p {
+    max-width: 500px;
+
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #666;
+}
+
+.interest-item:hover .interest-info p {
+    color: #aaa;
+}
+
+
+/* Arrow */
+
+.interest-arrow {
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.interest-item:hover .interest-arrow {
+    border-color: #777;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.interest-footer {
+    min-height: 100px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: end;
+
+    padding-top: 40px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #777;
+}
+
+.interest-footer span:nth-child(2) {
+    text-align: center;
+}
+
+.interest-footer span:nth-child(3) {
+    text-align: right;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .interest-navbar {
+        height: 80px;
+
+        padding: 0 5vw;
+    }
+
+    .interest-navbar nav {
+        gap: 18px;
+    }
+
+    .interest-navbar nav a {
+        font-size: 11px;
+    }
+
+    .interest-main {
+        padding: 0 5vw 50px;
+    }
+
+    .interest-hero {
+        min-height: 50vh;
+    }
+
+    .interest-hero h1 {
+        font-size: clamp(
+            100px,
+            18vw,
+            190px
+        );
+    }
+
+    .interest-item {
+        grid-template-columns: 60px 1fr 50px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+
+    .interest-navbar {
+        height: auto;
+
+        min-height: 75px;
+
+        padding: 20px 6vw;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .interest-logo {
+        font-size: 27px;
+    }
+
+
+    .interest-navbar nav {
+        display: grid;
+
+        grid-template-columns: repeat(2, auto);
+
+        gap: 10px 16px;
+
+        justify-content: end;
+    }
+
+
+    .interest-navbar nav a {
+        font-size: 10px;
+    }
+
+
+    .interest-main {
+        padding: 0 6vw 40px;
+    }
+
+
+    /* Hero */
+
+    .interest-hero {
+        min-height: 45vh;
+
+        padding: 60px 0;
+    }
+
+
+    .interest-label {
+        font-size: 9px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .interest-hero h1 {
+        font-size: clamp(
+            75px,
+            20vw,
+            140px
+        );
+
+        line-height: 0.8;
+
+        letter-spacing: -2px;
+
+        white-space: normal;
+
+        transform: none;
+    }
+
+
+    .interest-hero p {
+        margin-top: 30px;
+
+        max-width: 100%;
+
+        font-size: 13px;
+    }
+
+
+    /* Interest items */
+
+    .interest-item {
+        min-height: 150px;
+
+        grid-template-columns: 35px 1fr 35px;
+
+        gap: 10px;
+    }
+
+
+    .interest-item:hover {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .interest-number {
+        padding-top: 25px;
+
+        font-size: 9px;
+    }
+
+
+    .interest-info {
+        padding: 25px 0;
+    }
+
+
+    .interest-info h2 {
+        font-size: clamp(
+            42px,
+            13vw,
+            70px
+        );
+
+        line-height: 0.9;
+    }
+
+
+    .interest-info p {
+        margin-top: 12px;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
+    .interest-arrow {
+        width: 32px;
+        height: 32px;
+
+        font-size: 15px;
+    }
+
+
+    /* Footer */
+
+    .interest-footer {
+        min-height: 80px;
+
+        padding-top: 30px;
+
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .interest-navbar {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .interest-navbar nav {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+
+    .interest-hero {
+        padding-top: 45px;
+    }
+
+
+    .interest-hero h1 {
+        font-size: 72px;
+    }
+
+
+    .interest-item {
+        grid-template-columns: 25px 1fr;
+    }
+
+
+    .interest-arrow {
+        display: none;
+    }
+
+
+    .interest-info h2 {
+        font-size: 43px;
+    }
+
+
+    .interest-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .interest-footer span:nth-child(3) {
+        display: none;
+    }
+
+}
