@@ -1,471 +1,431 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact — TUKUR</title>
+```
+<title>Contact — TUKUR</title>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
+<link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+>
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<!-- Main CSS -->
+<link rel="stylesheet" href="css/style.css">
+```
+
 </head>
-
 
 <body>
 
+```
+<!-- =========================================
+     NAVIGATION
+========================================== -->
+
+<header class="contact-navbar">
+
+    <a href="index.html" class="contact-logo">
+        TMT<span>.</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="interest.html">Interests</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- =========================================
+     CONTACT PAGE
+========================================== -->
+
+<main class="contact-page">
+
     <!-- =========================================
-         NAVIGATION
+         CONTACT HERO
     ========================================== -->
 
-    <header class="contact-navbar">
+    <section class="contact-hero">
 
-        <a href="index.html" class="contact-logo">
-            TMT<span>.</span>
-        </a>
+        <h1>CONTACT</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="education.html">Education</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="interest.html">Interests</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <p>
+            Impressed by my work? Let’s connect and bring your ideas to life!
+        </p>
 
-    </header>
+        <div class="contact-scroll">
+            <span>Scroll to Explore</span>
+
+            <span class="contact-arrow">
+                ↓
+            </span>
+        </div>
+
+        <div class="contact-connect">
+            Let's Connect
+        </div>
+
+    </section>
 
 
     <!-- =========================================
-         CONTACT PAGE
+         CONTACT FORM SECTION
     ========================================== -->
 
-    <main class="contact-page">
+    <section class="contact-form-section">
 
+        <div class="contact-form-wrapper">
 
-        <!-- =========================================
-             CONTACT HERO
-        ========================================== -->
+            <h2>LET'S TALK</h2>
 
-        <section class="contact-hero">
+            <!--
+                FORM SUBMISSION
 
-            <h1>
-                CONTACT
-            </h1>
+                This uses FormSubmit to send the message
+                to your email address.
+            -->
 
-            <p>
-                Impressed by my work? Let’s connect and bring your ideas to life!
-            </p>
+            <form
+                action="https://formsubmit.co/tukurmurtala206@gmail.com"
+                method="POST"
+            >
 
-
-            <!-- Bottom Left -->
-
-            <div class="contact-scroll">
-
-                <span>
-                    Scroll to Explore
-                </span>
-
-                <span class="contact-arrow">
-                    ⌄
-                </span>
-
-            </div>
-
-
-            <!-- Bottom Right -->
-
-            <div class="contact-connect">
-                Let's Connect
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================================
-             CONTACT FORM SECTION
-        ========================================== -->
-
-        <section class="contact-form-section">
-
-            <div class="contact-form-wrapper">
-
-
-                <!-- =========================================
-                     FORM TITLE
-                ========================================== -->
-
-                <h2>
-                    LET'S TALK
-                </h2>
-
-
-                <!-- =========================================
-                     CONTACT FORM
-                ========================================== -->
-
-                <form
-                    action="https://formsubmit.co/tukurmurtala206@gmail.com"
-                    method="POST"
+                <!-- Email subject -->
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New message from TUKUR Portfolio"
                 >
 
-                    <!-- Email subject -->
+                <!-- Disable FormSubmit captcha -->
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
+                >
+
+                <!-- Prevent spam -->
+                <input
+                    type="text"
+                    name="_honey"
+                    style="display:none"
+                >
+
+                <!-- NAME -->
+
+                <div class="form-field">
+
+                    <label for="name">
+                        Your name
+                    </label>
+
                     <input
-                        type="hidden"
-                        name="_subject"
-                        value="New message from TUKUR Portfolio"
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
                     >
-
-                    <!-- Disable captcha -->
-                    <input
-                        type="hidden"
-                        name="_captcha"
-                        value="false"
-                    >
-
-
-                    <!-- NAME -->
-
-                    <div class="form-field">
-
-                        <label for="name">
-                            Your name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            autocomplete="name"
-                            required
-                        >
-
-                    </div>
-
-
-
-                    <!-- EMAIL -->
-
-                    <div class="form-field">
-
-                        <label for="email">
-                            Your email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            autocomplete="email"
-                            required
-                        >
-
-                    </div>
-
-
-
-                    <!-- SUBJECT -->
-
-                    <div class="form-field">
-
-                        <label for="subject">
-                            Subject
-                        </label>
-
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            required
-                        >
-
-                    </div>
-
-
-
-                    <!-- MESSAGE -->
-
-                    <div class="form-field message-field">
-
-                        <label for="message">
-                            Your message
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="5"
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-
-                    <!-- SUBMIT -->
-
-                    <button type="submit">
-
-                        Send Message
-
-                        <span class="submit-arrow">
-                            →
-                        </span>
-
-                    </button>
-
-                </form>
-
-
-
-                <!-- =========================================
-                     SOCIAL LINKS
-                ========================================== -->
-
-                <div class="contact-socials">
-
-
-                    <!-- EMAIL -->
-
-                    <a
-                        href="mailto:tukurmurtala206@gmail.com"
-                        class="social-item"
-                    >
-
-                        <div class="social-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 6.2 9-6.2V7H3Zm18 10V9.93l-8.43 5.81a1 1 0 0 1-1.14 0L3 9.93V17h18Z"
-                                />
-                            </svg>
-
-                        </div>
-
-                        <span class="social-name">
-                            tukurmurtala206@gmail.com
-                        </span>
-
-                        <span class="social-platform">
-                            Email
-                        </span>
-
-                    </a>
-
-
-
-                    <!-- X / TWITTER -->
-
-                    <a
-                        href="https://x.com/TmTData"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="social-item"
-                    >
-
-                        <div class="social-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.964 6.817H1.684l7.73-8.835L1.254 2.25h6.826l4.713 6.231 5.451-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"
-                                />
-                            </svg>
-
-                        </div>
-
-                        <span class="social-name">
-                            @TmTData
-                        </span>
-
-                        <span class="social-platform">
-                            X / Twitter
-                        </span>
-
-                    </a>
-
-
-
-                    <!-- GITHUB -->
-
-                    <a
-                        href="https://github.com/DevTkay"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="social-item"
-                    >
-
-                        <div class="social-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"
-                                />
-                            </svg>
-
-                        </div>
-
-                        <span class="social-name">
-                            DevTkay
-                        </span>
-
-                        <span class="social-platform">
-                            GitHub
-                        </span>
-
-                    </a>
-
-
-
-                    <!-- LINKEDIN -->
-
-                    <a
-                        href="https://www.linkedin.com/in/tukur-murtala/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="social-item"
-                    >
-
-                        <div class="social-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM2.75 9.75h4.5V21h-4.5V9.75ZM9.5 9.75h4.31v1.54h.06c.6-1.02 2.07-2.1 4.27-2.1 4.56 0 5.4 3 5.4 6.9V21h-4.49v-4.35c0-1.04-.02-2.38-1.45-2.38-1.45 0-1.67 1.13-1.67 2.3V21H9.5V9.75Z"
-                                />
-                            </svg>
-
-                        </div>
-
-                        <span class="social-name">
-                            tukur-murtala
-                        </span>
-
-                        <span class="social-platform">
-                            LinkedIn
-                        </span>
-
-                    </a>
-
-
-
-                    <!-- TIKTOK -->
-
-                    <a
-                        href="https://www.tiktok.com/@tmtdata"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="social-item"
-                    >
-
-                        <div class="social-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M15.5 2h3.05c.22 1.35 1.01 2.53 2.2 3.28.74.47 1.59.75 2.5.77v3.1a8.2 8.2 0 0 1-4.7-1.48v6.64a6.69 6.69 0 1 1-5.78-6.63v3.16a3.6 3.6 0 1 0 2.73 3.47V2Z"
-                                />
-                            </svg>
-
-                        </div>
-
-                        <span class="social-name">
-                            @tmtdata
-                        </span>
-
-                        <span class="social-platform">
-                            TikTok
-                        </span>
-
-                    </a>
-
-
-
-                    <!-- INSTAGRAM -->
-
-                    <a
-                        href="https://www.instagram.com/tmtdata/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="social-item"
-                    >
-
-                        <div class="social-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-
-                                <rect
-                                    x="3"
-                                    y="3"
-                                    width="18"
-                                    height="18"
-                                    rx="5"
-                                />
-
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="4"
-                                />
-
-                                <circle
-                                    cx="17.5"
-                                    cy="6.5"
-                                    r="1"
-                                    fill="currentColor"
-                                    stroke="none"
-                                />
-
-                            </svg>
-
-                        </div>
-
-                        <span class="social-name">
-                            @TMTDATA
-                        </span>
-
-                        <span class="social-platform">
-                            Instagram
-                        </span>
-
-                    </a>
-
 
                 </div>
 
+
+                <!-- EMAIL -->
+
+                <div class="form-field">
+
+                    <label for="email">
+                        Your email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- SUBJECT -->
+
+                <div class="form-field">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-field message-field">
+
+                    <label for="message">
+                        Your message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button type="submit">
+                    Send Message
+                    <span class="submit-arrow">→</span>
+                </button>
+
+            </form>
+
+
+            <!-- =========================================
+                 SOCIAL LINKS
+            ========================================== -->
+
+            <div class="contact-socials">
+
+
+                <!-- EMAIL -->
+
+                <a
+                    href="mailto:tukurmurtala206@gmail.com"
+                    class="social-item"
+                >
+
+                    <div class="social-icon">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 6.2 9-6.2V7H3Zm18 10V9.93l-8.43 5.81a1 1 0 0 1-1.14 0L3 9.93V17h18Z"
+                            />
+                        </svg>
+
+                    </div>
+
+                    <span class="social-name">
+                        tukurmurtala206@gmail.com
+                    </span>
+
+                    <span class="social-platform">
+                        Email
+                    </span>
+
+                </a>
+
+
+                <!-- X / TWITTER -->
+
+                <a
+                    href="https://x.com/TmTData"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-item"
+                >
+
+                    <div class="social-icon">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817-5.964 6.817H1.684l7.73-8.835L1.254 2.25h6.826l4.713 6.231 5.451-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"
+                            />
+                        </svg>
+
+                    </div>
+
+                    <span class="social-name">
+                        @TmTData
+                    </span>
+
+                    <span class="social-platform">
+                        X / Twitter
+                    </span>
+
+                </a>
+
+
+                <!-- GITHUB -->
+
+                <a
+                    href="https://github.com/DevTkay"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-item"
+                >
+
+                    <div class="social-icon">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"
+                            />
+                        </svg>
+
+                    </div>
+
+                    <span class="social-name">
+                        DevTkay
+                    </span>
+
+                    <span class="social-platform">
+                        GitHub
+                    </span>
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a
+                    href="https://www.linkedin.com/in/tukur-murtala/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-item"
+                >
+
+                    <div class="social-icon">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM2.75 9.75h4.5V21h-4.5V9.75ZM9.5 9.75h4.31v1.54h.06c.6-1.02 2.07-2.1 4.27-2.1 4.56 0 5.4 3 5.4 6.9V21h-4.49v-4.35c0-1.04-.02-2.38-1.45-2.38-1.45 0-1.67 1.13-1.67 2.3V21H9.5V9.75Z"
+                            />
+                        </svg>
+
+                    </div>
+
+                    <span class="social-name">
+                        tukur-murtala
+                    </span>
+
+                    <span class="social-platform">
+                        LinkedIn
+                    </span>
+
+                </a>
+
+
+                <!-- TIKTOK -->
+
+                <a
+                    href="https://www.tiktok.com/@satuks"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-item"
+                >
+
+                    <div class="social-icon">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M15.5 2h3.05c.22 1.35 1.01 2.53 2.2 3.28.74.47 1.59.75 2.5.77v3.1a8.2 8.2 0 0 1-4.7-1.48v6.64a6.69 6.69 0 1 1-5.78-6.63v3.16a3.6 3.6 0 1 0 2.73 3.47V2Z"
+                            />
+                        </svg>
+
+                    </div>
+
+                    <span class="social-name">
+                        @satuks
+                    </span>
+
+                    <span class="social-platform">
+                        TikTok
+                    </span>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    href="https://www.instagram.com/tmt_data/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-item"
+                >
+
+                    <div class="social-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+
+                            <rect
+                                x="3"
+                                y="3"
+                                width="18"
+                                height="18"
+                                rx="5"
+                            />
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="4"
+                            />
+
+                            <circle
+                                cx="17.5"
+                                cy="6.5"
+                                r="1"
+                                fill="currentColor"
+                                stroke="none"
+                            />
+
+                        </svg>
+
+                    </div>
+
+                    <span class="social-name">
+                        @tmt_data
+                    </span>
+
+                    <span class="social-platform">
+                        Instagram
+                    </span>
+
+                </a>
+
             </div>
 
-        </section>
+        </div>
 
+    </section>
 
-    </main>
-
+</main>
+```
 
 </body>
+
 </html>
